@@ -53,7 +53,12 @@ class Cache_Lite_File extends Cache_Lite
     * @access public
     */
     function Cache_Lite_File($options = array(NULL))
-    {   
+    {
+        self::__construct($options = array(NULL));
+    }
+ 
+    public function __construct($options = array(NULL))
+    { 
         $options['lifetime'] = 0;
         $this->Cache_Lite($options);
         if (isset($options['masterFile'])) {
