@@ -83,6 +83,11 @@ class Cache_Lite_Function extends Cache_Lite
     */
     function Cache_Lite_Function($options = array(NULL))
     {
+        self::__construct($options = array(NULL));
+    }
+
+    public function __construct($options = array(NULL))
+    {
         $availableOptions = array('debugCacheLiteFunction', 'defaultGroup', 'dontCacheWhenTheOutputContainsNOCACHE', 'dontCacheWhenTheResultIsFalse', 'dontCacheWhenTheResultIsNull');
         while (list($name, $value) = each($options)) {
             if (in_array($name, $availableOptions)) {
