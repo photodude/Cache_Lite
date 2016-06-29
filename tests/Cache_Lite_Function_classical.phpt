@@ -65,6 +65,11 @@ class bench
 class test
 {
     function test($options) {
+        self::__construct($options);
+    }
+
+    public function __construct($options)
+    {
         $this->foo = 'bar';
         $cache = new Cache_Lite_Function($options);
         echo($cache->call(array($this, 'method_to_bench'), 'foo', 'bar'));
