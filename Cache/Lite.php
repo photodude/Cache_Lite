@@ -296,6 +296,11 @@ class Cache_Lite
     */
     function Cache_Lite($options = array(NULL))
     {
+        self::__construct($options = array(NULL));
+    }
+
+    public function __construct($options = array(NULL))
+    {
         foreach($options as $key => $value) {
             $this->setOption($key, $value);
         }
