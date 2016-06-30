@@ -294,11 +294,6 @@ class Cache_Lite
     * @param array $options options
     * @access public
     */
-    function Cache_Lite($options = array(NULL))
-    {
-        self::__construct($options = array(NULL));
-    }
-
     public function __construct($options = array(NULL))
     {
         foreach($options as $key => $value) {
@@ -307,6 +302,11 @@ class Cache_Lite
         if (!isset($options['cacheDir']) && function_exists('sys_get_temp_dir')) {
         	$this->setOption('cacheDir', sys_get_temp_dir() . DIRECTORY_SEPARATOR);
         }
+    }
+
+    function Cache_Lite($options = array(NULL))
+    {
+        self::__construct($options = array(NULL));
     }
     
     /**
