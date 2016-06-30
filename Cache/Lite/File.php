@@ -52,11 +52,6 @@ class Cache_Lite_File extends Cache_Lite
     * @param array $options options
     * @access public
     */
-    function Cache_Lite_File($options = array(NULL))
-    {
-        self::__construct($options = array(NULL));
-    }
- 
     public function __construct($options = array(NULL))
     { 
         $options['lifetime'] = 0;
@@ -70,7 +65,12 @@ class Cache_Lite_File extends Cache_Lite
             return $this->raiseError('Cache_Lite_File : Unable to read masterFile : '.$this->_masterFile, -3);
         }
     }
-    
+
+    function Cache_Lite_File($options = array(NULL))
+    {
+        self::__construct($options = array(NULL));
+    }
+ 
     /**
     * Test if a cache is available and (if yes) return it
     *
