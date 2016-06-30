@@ -26,14 +26,14 @@ class Cache_Lite_Output extends Cache_Lite
     * @param array $options options
     * @access public
     */
-    function Cache_Lite_Output($options)
-    {
-        self::__construct($options);
-    }
-
     public function __construct($options)
     {
         parent::__construct($options);
+    }
+
+    function Cache_Lite_Output($options)
+    {
+        self::__construct($options);
     }
 
     /**
