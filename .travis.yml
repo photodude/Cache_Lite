@@ -3,7 +3,7 @@ sudo: false
 language: php
 
 before_install:
-  - pear channel-update
+  - pear upgrade-all
 
 install:
   - pear install package.xml
