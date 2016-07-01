@@ -303,6 +303,11 @@ class Cache_Lite
         	$this->setOption('cacheDir', sys_get_temp_dir() . DIRECTORY_SEPARATOR);
         }
     }
+  
+    public function Cache_Lite($options = array(NULL))
+    {
+        self::__construct($options = array(NULL));
+    }
     
     /**
     * Generic way to set a Cache_Lite option
