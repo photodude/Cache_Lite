@@ -31,11 +31,6 @@ class Cache_Lite_Output extends Cache_Lite
         parent::__construct($options);
     }
 
-    function Cache_Lite_Output($options)
-    {
-        self::__construct($options);
-    }
-
     /**
     * Start the cache
     *
