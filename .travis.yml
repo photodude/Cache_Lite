@@ -2,9 +2,6 @@
 sudo: false
 language: php
 
-before_install:
-  - pear upgrade pear
-
 install:
   - pear install package.xml
 
