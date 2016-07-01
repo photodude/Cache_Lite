@@ -94,6 +94,11 @@ class Cache_Lite_Function extends Cache_Lite
         parent::__construct($options);
     }
 
+    public function Cache_Lite_Function($options = array(NULL))
+    {
+        self::__construct($options = array(NULL));
+    }
+
     /**
     * Calls a cacheable function or method (or not if there is already a cache for it)
     *
