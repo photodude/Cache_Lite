@@ -24,7 +24,7 @@
     <time>12:00:00</time>
     <version>
         <release>1.7.16</release>
-        <api>1.10.1</api>
+        <api>1.7.7</api>
     </version>
     <stability>
         <release>stable</release>
@@ -87,10 +87,10 @@
     <dependencies>
         <required>
             <php>
-                <min>4.0.0</min>
+                <min>5.0.0</min>
             </php>
             <pearinstaller>
-                <min>1.5.4</min>
+                <min>1.10.1</min>
             </pearinstaller>
             <package>
                 <name>PEAR</name>
