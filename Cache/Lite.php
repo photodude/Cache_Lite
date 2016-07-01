@@ -560,8 +560,7 @@ class Cache_Lite
     function raiseError($msg, $code)
     {
         include_once('PEAR.php');
-        $pear = new PEAR();
-        return $pear->raiseError($msg, $code, $this->_pearErrorMode);
+        return PEAR::raiseError($msg, $code, $this->_pearErrorMode);
     }
     
     /**
