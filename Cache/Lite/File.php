@@ -66,7 +66,7 @@ class Cache_Lite_File extends Cache_Lite
         }
     }
 
-    function Cache_Lite_File($options = array(NULL))
+    public function Cache_Lite_File($options = array(NULL))
     {
         self::__construct($options = array(NULL));
     }
