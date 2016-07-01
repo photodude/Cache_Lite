@@ -64,10 +64,6 @@ class bench
 
 class test
 {
-    function test($options) {
-        self::__construct($options);
-    }
-
     public function __construct($options)
     {
         $this->foo = 'bar';
